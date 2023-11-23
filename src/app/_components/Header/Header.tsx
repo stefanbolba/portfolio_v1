@@ -15,7 +15,7 @@ const Header = ({ option, menuLinks }: Props) => {
           <Link href="/">Stefan Bolba </Link>
         </h1>
         <h2 className="text-lg font-medium tracking-tight text-slate-200 sm:text-x">Full Stack developer</h2>
-        <p className="max-w-xs leading-normal">I build full stack systems and applications</p>
+        <p className="max-w-xs leading-normal lg:pb-0 pb-2.5">I build full stack systems and applications</p>
         <nav className="lg:block hidden mt-16" aria-label="In-page jump links">
           <ul className="w-fit">
             {menuLinks.map((link) => (
@@ -41,7 +41,12 @@ const Header = ({ option, menuLinks }: Props) => {
       </div>
       <ul className="flex gap-2.5">
         <li>
-          <a href="/github" className="block hover:text-slate-200">
+          <a
+            href="https://github.com/stefanbolba"
+            className="block hover:text-slate-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -54,7 +59,12 @@ const Header = ({ option, menuLinks }: Props) => {
           </a>
         </li>
         <li>
-          <a href="/linkedin" className="block hover:text-slate-200">
+          <a
+            href="https://uk.linkedin.com/in/stefan-bolba"
+            className="block hover:text-slate-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
